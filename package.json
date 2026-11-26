@@ -1,0 +1,52 @@
+{
+  "name": "@tai-platform/tai",
+  "version": "0.1.0",
+  "description": "Package manager for Copilot assets: prompts, skills, instructions and agents.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "tai": "dist/bin/tai.js"
+  },
+  "main": "dist/src/index.js",
+  "files": [
+    "dist",
+    "!dist/test",
+    "LICENSE",
+    "NOTICE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "test": "npm run clean && npm run build && node scripts/test.mjs",
+    "prepublishOnly": "npm run clean && npm test"
+  },
+  "keywords": [
+    "copilot",
+    "github-copilot",
+    "prompts",
+    "skills",
+    "agents",
+    "instructions",
+    "package-manager",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tai-platform/tai-cli.git"
+  },
+  "homepage": "https://github.com/tai-platform/tai-cli#readme",
+  "bugs": {
+    "url": "https://github.com/tai-platform/tai-cli/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
