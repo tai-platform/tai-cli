@@ -185,3 +185,7 @@ Contribution and release process: [CONTRIBUTING.md](CONTRIBUTING.md).
 ## License
 
 Apache License 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
+
+## Author
+
+Made by [Mohammed HILMI](https://www.linkedin.com/in/hilmim/).
