@@ -6,7 +6,6 @@
     "ref_name": { "include": ["refs/tags/v*"], "exclude": [] }
   },
   "rules": [
-    { "type": "creation" },
     { "type": "update" },
     { "type": "deletion" },
     { "type": "non_fast_forward" }
