@@ -33,15 +33,15 @@ Requires Node.js 20 or later.
 
 ```bash
 tai search review                         # find assets; add -k agent to filter by kind, --json for scripts
-tai view agent code-reviewer              # metadata, files, installed status, definition (--raw: definition only)
-tai install agent code-reviewer           # into this repo: .github/agents/
+tai view agent github-wiki              # metadata, files, installed status, definition (--raw: definition only)
+tai install agent github-wiki           # into this repo: .github/agents/
 tai install skill spring-starter@^1.0.0  # pin a version range
 tai install mcp atlassian -g              # into ~/.copilot
 tai install                               # restore exactly what .tai.yaml records
 tai list                                  # what is installed in this repo
 tai outdated                              # anything newer published? exits 1 if so
 tai update [kind name]                    # move to latest, one asset or all
-tai uninstall agent code-reviewer         # remove it and the folders it leaves empty
+tai uninstall agent github-wiki         # remove it and the folders it leaves empty
 tai doctor                                # verify files on disk against .tai.yaml
 tai config set marketplace <url|dir>      # also: get, unset, path
 ```
